@@ -11,7 +11,6 @@ const Layout: FC<PropsWithChildren<unknown>> = ({ children }) => {
   useEffect(() => {
     Aos.init({
       duration: 1500,
-      once: true,
       delay: 400,
     })
   })
