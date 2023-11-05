@@ -1,0 +1,144 @@
+@import '@/styles/mixins';
+
+.company {
+  @include adaptiv-value('margin-top', 30, 0, 0);
+
+  &__body {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    @include adaptiv-value('gap', 50, 30, 0);
+  }
+
+  &__item {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    @include adaptiv-value('gap', 30, 10, 0);
+
+    &:nth-child(2) {
+      width: 40%;
+    }
+  }
+
+  &__icons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include adaptiv-value('grid-row-gap', 30, 10, 0);
+  }
+
+  &__icon {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px
+  }
+
+  &__icon__img {
+    @include adaptiv-value('width', 60, 50, 0);
+    @include adaptiv-value('height', 60, 50, 0);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__icon__title {
+    font-weight: 500;
+    @include adaptiv-value('font-size', 18, 14, 0);
+  }
+
+  &__contact {
+    position: relative;
+    @include adaptiv-value('margin-top', 100, 50, 0);
+    @include adaptiv-value('margin-bottom', 100, 50, 0);
+
+    &__content {
+      border-radius: 15px;
+      border: 1.621px solid rgba(185, 54, 245, 0.25);
+      border-radius: 7.35px;
+      border: 1.069px solid rgba(185, 54, 245, 0.25);
+      background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0.00) -42.59%, #AA14F0 -42.58%, rgba(170, 20, 240, 0.18) 4.35%, rgba(151, 60, 68, 0.05) 99.99%, rgba(185, 54, 245, 0.00) 100%);
+      @include adaptiv-value('padding', 30, 15, 0);
+    }
+
+    &__item {
+      display: flex;
+      @include adaptiv-value('gap', 50, 30, 0);
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+    }
+
+    &__form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+
+      input {
+        border-radius: 1.621px;
+        border: 0.811px solid rgba(185, 54, 245, 0.25);
+        background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0.00) -42.59%, #CB8DE8 -42.58%, rgba(203, 143, 232, 0.18) 4.35%, rgba(151, 60, 68, 0.05) 99.99%, rgba(199, 137, 228, 0.00) 100%);
+        box-shadow: 0px -9.72759px 16.21265px 0px rgba(255, 255, 255, 0.03) inset;
+        backdrop-filter: blur(6.079744815826416px);
+        @include adaptiv-value('padding-top', 10, 8, 0);
+        @include adaptiv-value('padding-bottom', 10, 8, 0);
+        @include adaptiv-value('padding-left', 15, 10, 0);
+        @include adaptiv-value('padding-right', 15, 10, 0);
+      }
+
+      &__btn {
+        display: flex;
+        align-items: center;
+
+        img {
+          @include adaptiv-value('width', 18, 15, 0);
+          @include adaptiv-value('height', 15, 12, 0);
+        }
+      }
+    }
+
+    &__img {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: .60;
+        border-radius: 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .company {
+    &__content {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__item {
+      width: 100%;
+
+      &:nth-child(2) {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import '@/styles/mixins';
+
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px 0;
+  height: 60px;
+  overflow-x: clip;
+
+  &__body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    z-index: 1001;
+    position: relative;
+    cursor: pointer;
+    width: 100px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
