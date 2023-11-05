@@ -84,7 +84,7 @@
 
 @media (max-width: 768px) {
   .menu {
-    position: absolute;
+    position: fixed;
     height: 100vh;
     background: $experienceBgColor;
     width: 80vw;

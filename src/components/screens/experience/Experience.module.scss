@@ -141,8 +141,8 @@
   &__close {
     position: absolute;
     cursor: pointer;
-    @include adaptiv-value('right', 100, 50, 0);
-    @include adaptiv-value('top', 80, 50, 0);
+    @include adaptiv-value('right', 150, 50, 0);
+    @include adaptiv-value('top', 150, 100, 0);
     width: 30px;
     height: 30px;
     display: flex;

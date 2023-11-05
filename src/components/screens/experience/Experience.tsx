@@ -9,12 +9,14 @@ const Experience: FC = () => {
 
   const showPopup = () => {
     setPopupActive(true);
-    (document.querySelector('body') as HTMLBodyElement).style.overflow = 'hidden'
+    (document.querySelector('body') as HTMLBodyElement).style.overflow = 'hidden';
+    (document.querySelector('html') as HTMLElement).style.overflow = 'hidden';
   }
 
   const hiddenPopup = () => {
     setPopupActive(false);
-    (document.querySelector('body') as HTMLBodyElement).style.overflow = 'auto'
+    (document.querySelector('body') as HTMLBodyElement).style.overflow = 'auto';
+    (document.querySelector('html') as HTMLElement).style.overflow = 'auto';
   }
 
   return (

@@ -1,11 +1,10 @@
 'use client'
-import { FC, useState } from 'react'
+import { FC, useEffect, useState } from 'react'
 import cl from './HeaderMenu.module.scss'
 import Button from '@/components/ui/Button'
 
 const HeaderMenu: FC = () => {
   const [menuActive, setMenuActive] = useState<boolean>(false)
-
 
   return (
     <>
@@ -18,7 +17,9 @@ const HeaderMenu: FC = () => {
         </ul>
       </nav>
       <div className={menuActive ? `${cl.menu__burger} ${cl.active}` : cl.menu__burger}
-        onClick={() => setMenuActive(prev => !prev)}
+        onClick={() => {
+          setMenuActive(prev => !prev)
+        }}
       >
         <span></span>
         <span></span>
