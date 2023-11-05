@@ -57,7 +57,7 @@ const Experience: FC = () => {
       </section>
       <Popup cl={popupActive ? `${cl.popup} ${cl.active}` : cl.popup}>
         <div className={cl.popup__video}>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/NOk_M1Ib5F0?si=0JuBDVzc6Ly6DZQM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/NOk_M1Ib5F0?si=0JuBDVzc6Ly6DZQM" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe> */}
         </div>
         <div className={cl.popup__close} onClick={hiddenPopup} ></div>
       </Popup>
