@@ -31,7 +31,7 @@ const Headset: FC = () => {
                   <p className={cl.headset__card__text}>AI and IoT are both emerging<br /> innovative technologies with<br /> a lot of potentials. </p>
                 </div>
               </div>
-              <div className={cl.headset__card} data-aos='zoom-in' data-aos-delay='700'>
+              <div className={cl.headset__card} data-aos='zoom-in' data-aos-delay='800'>
                 <div className={cl.headset__card__img}>
                   <img src="./headset-3.png" alt="" />
                 </div>
@@ -42,7 +42,7 @@ const Headset: FC = () => {
                   <p className={cl.headset__card__text}>HoloLens display information,<br /> blend with the real world , or<br /> even simulate a virtual world.  </p>
                 </div>
               </div>
-              <div className={cl.headset__card} data-aos='zoom-in' data-aos-delay='800'>
+              <div className={cl.headset__card} data-aos='zoom-in' data-aos-delay='1000'>
                 <div className={cl.headset__card__img}>
                   <img src="./headset-4.png" alt="" />
                 </div>
