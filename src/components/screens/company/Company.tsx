@@ -56,7 +56,8 @@ const Company: FC = () => {
                 <p className="text" data-aos='fade-right'
                   data-aos-delay='2000'>We specialize in creating visual identities for<br /> products and branda in your company.</p>
                 <form onClick={(e) => e.preventDefault()} action="" method="post" className={cl.company__contact__form} data-aos='fade-right'
-                  data-aos-delay='2100'>
+                  data-aos-delay='2100'
+                  data-aos-offset="1300">
                   <input type="text" placeholder='Your Email' />
                   <Button cl={cl.company__contact__form__btn}>Start <img src="./arrow.svg" alt="arrow" /></Button>
                 </form>
