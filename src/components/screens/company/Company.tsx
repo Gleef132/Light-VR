@@ -16,11 +16,11 @@ const Company: FC = () => {
                 culture
               </h1>
               <p className="text" data-aos='fade-down'
-                data-aos-delay='1400'>We specialize in creating visual identities for products and branda in your company.</p>
+                data-aos-delay='1300'>We specialize in creating visual identities for products and branda in your company.</p>
             </div>
             <div className={cl.company__item}>
               <div className={cl.company__icons} data-aos='fade-left'
-                data-aos-delay='1600'>
+                data-aos-delay='1400'>
                 <div className={cl.company__icon}>
                   <div className={cl.company__icon__img}>
                     <img src="./icon-1.svg" alt="icon" />
@@ -52,11 +52,11 @@ const Company: FC = () => {
             <div className={cl.company__contact__content}>
               <div className={cl.company__contact__item}>
                 <h1 className="title" data-aos='fade-right'
-                  data-aos-delay='1900'>Explore product in<br />new way</h1>
+                  data-aos-delay='1500'>Explore product in<br />new way</h1>
                 <p className="text" data-aos='fade-right'
-                  data-aos-delay='2000'>We specialize in creating visual identities for<br /> products and branda in your company.</p>
+                  data-aos-delay='1600'>We specialize in creating visual identities for<br /> products and branda in your company.</p>
                 <form onClick={(e) => e.preventDefault()} action="" method="post" className={cl.company__contact__form} data-aos='fade-right'
-                  data-aos-delay='2100'
+                  data-aos-delay='1700'
                   data-aos-offset="20">
                   <input type="text" placeholder='Your Email' />
                   <Button cl={cl.company__contact__form__btn}>Start <img src="./arrow.svg" alt="arrow" /></Button>
